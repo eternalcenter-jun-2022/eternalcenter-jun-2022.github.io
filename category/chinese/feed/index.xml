@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chinese (中文) &#8211; Eternal Center</title>
+	<atom:link href="https://eternalcenter-jun-2022.github.io/category/chinese/feed/" rel="self" type="application/rss+xml" />
+	<link>https://eternalcenter-jun-2022.github.io/</link>
+	<description></description>
+	<lastBuildDate>Sun, 26 Jun 2022 10:33:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>[内容] Linux 命令 expr （截取字符串、计算字符串长度和数值运算）</title>
+		<link>https://eternalcenter-jun-2022.github.io/expr/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Sun, 26 Jun 2022 10:33:09 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Languages (语言)]]></category>
+		<category><![CDATA[Shell]]></category>
+		<category><![CDATA[Shell Basic (基础)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26178</guid>
+
+					<description><![CDATA[案例一：计算字符串长度 （补充：这里以计算字符串 eternalcenter.com 的长度为例） 案例二：截取字符串 （补充：这里以计算字符串 eternalcenter.com 的第 1 个字符到第 13 个字符串为例） 案例三：显示某字符在某字符串中第 1 次出现的位置 （补充：这里以显示 r 字符在字符串 eternalcenter.com 中第 1 次出现的位置为例） 案例四：数值运算 4.1 案例一：加法 （补充：这里以 1 加 1 等于 2 为例） 4.2 案例二：减法 （补充：这里以 2 减 1 等于 1 为例） 4.3 案例三：乘法 （补充：这里以 3 乘以 3 等于 9 为例） （注意：expr 使用乘法时必须要使用反义符号 “\”） 4.4 案例四：除法 &#8230; <p class="link-more"><a href="https://eternalcenter-jun-2022.github.io/expr/" class="more-link">Continue reading<span class="screen-reader-text"> "[内容] Linux 命令 expr （截取字符串、计算字符串长度和数值运算）"</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<h3>案例一：计算字符串长度</h3>
+
+
+
+<pre class="wp-block-code"><code># expr length 'eternalcenter.com'
+17</code></pre>
+
+
+
+<p>（补充：这里以计算字符串 eternalcenter.com 的长度为例）</p>
+
+
+
+<h3>案例二：截取字符串</h3>
+
+
+
+<pre class="wp-block-code"><code># expr substr "eternalcenter.com" 1 13
+expr substr "eternalcenter.com" 1 13</code></pre>
+
+
+
+<p>（补充：这里以计算字符串 eternalcenter.com 的第 1 个字符到第 13 个字符串为例）</p>
+
+
+
+<h3>案例三：显示某字符在某字符串中第 1 次出现的位置</h3>
+
+
+
+<pre class="wp-block-code"><code># expr index eternalcenter.com r
+4</code></pre>
+
+
+
+<p>（补充：这里以显示 r 字符在字符串 eternalcenter.com 中第 1 次出现的位置为例）</p>
+
+
+
+<h3>案例四：数值运算</h3>
+
+
+
+<h4>4.1 案例一：加法</h4>
+
+
+
+<pre class="wp-block-code"><code># expr 1 + 1
+2</code></pre>
+
+
+
+<p>（补充：这里以 1 加 1 等于 2 为例）</p>
+
+
+
+<h4>4.2 案例二：减法</h4>
+
+
+
+<pre class="wp-block-code"><code># expr 2 - 1
+1</code></pre>
+
+
+
+<p>（补充：这里以 2 减 1 等于 1 为例）</p>
+
+
+
+<h4>4.3 案例三：乘法</h4>
+
+
+
+<pre class="wp-block-code"><code># expr 3 \* 3
+9</code></pre>
+
+
+
+<p>（补充：这里以 3 乘以 3 等于 9 为例）</p>
+
+
+
+<p>（注意：expr 使用乘法时必须要使用反义符号 “\”）</p>
+
+
+
+<h4>4.4 案例四：除法</h4>
+
+
+
+<pre class="wp-block-code"><code># expr 9 / 3 / 3
+1</code></pre>
+
+
+
+<p>（补充：这里以 9 除以 3 再除以 3 为等于 1 为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux 命令安全的设置</title>
+		<link>https://eternalcenter-jun-2022.github.io/command-secure/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Sat, 25 Jun 2022 13:37:57 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System File Security (系统文件安全)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Privilege Security (系统权限安全)]]></category>
+		<category><![CDATA[System Process Security (系统进程安全)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26174</guid>
+
+					<description><![CDATA[确保以下目录的所属主和所属组是 root，且其它用户没有写入权限：]]></description>
+										<content:encoded><![CDATA[
+<p>确保以下目录的所属主和所属组是 root，且其它用户没有写入权限：</p>
+
+
+
+<pre class="wp-block-code"><code># ls -ld /usr/local/bin /usr/local/sbin /usr/bin/ /usr/sbin
+dr-xr-xr-x. 2 root root 53248 Jun 24 15:09 /usr/bin/
+drwxr-xr-x. 3 root root  4096 Jun 21  2021 /usr/local/bin
+drwxr-xr-x. 2 root root     6 Jun 21  2021 /usr/local/sbin
+dr-xr-xr-x. 2 root root 20480 Jun 24 15:09 /usr/sbin</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Linux tr 命令 （内容替换）</title>
+		<link>https://eternalcenter-jun-2022.github.io/tr/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 24 Jun 2022 13:58:41 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Languages (语言)]]></category>
+		<category><![CDATA[Shell]]></category>
+		<category><![CDATA[Shell Basic (基础)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System File (系统文件)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Storage & System Directory & System File (系统存储 & 系统目录 & 系统文件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26148</guid>
+
+					<description><![CDATA[内容一：tr 命令的简介 1.1 tr 命令的格式 1.2 tr 命令的原理 将 &#60;section 1&#62; 里的内容替换成 &#60;section 2&#62; 里的内容 内容二：tr 命令的选项 1) -c 或者 &#8211;complement 改变除了某内容外的所有内容2) -d 或者 &#8211;delete 删除某内容3) -s 或者 &#8211;squeeze-repeats 将相临重复的某个字符缩减成 1 个4) -t 或者 &#8211;truncate-set1 将 &#60;section 1&#62; 里的内容缩减成和 &#60;section 2&#62; 里的内容一样长 内容三：tr 命令的参数 1) \ 反斜杠2) \b 退格3) \f 换页4) \n 换行5) \r 回车6) &#8230; <p class="link-more"><a href="https://eternalcenter-jun-2022.github.io/tr/" class="more-link">Continue reading<span class="screen-reader-text"> "Linux tr 命令 （内容替换）"</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：tr 命令的简介</h3>
+
+
+
+<h4>1.1 tr 命令的格式</h4>
+
+
+
+<pre class="wp-block-code"><code># tr &lt;option&gt; &lt;section 1&gt; &lt;sectiong 2&gt;</code></pre>
+
+
+
+<h4>1.2 tr 命令的原理</h4>
+
+
+
+<p>将 &lt;section 1&gt; 里的内容替换成 &lt;section 2&gt; 里的内容</p>
+
+
+
+<h3>内容二：tr 命令的选项</h3>
+
+
+
+<p>1) -c 或者 &#8211;complement 改变除了某内容外的所有内容<br>2) -d 或者 &#8211;delete 删除某内容<br>3) -s 或者 &#8211;squeeze-repeats 将相临重复的某个字符缩减成 1 个<br>4) -t 或者 &#8211;truncate-set1 将 &lt;section 1&gt; 里的内容缩减成和 &lt;section 2&gt; 里的内容一样长</p>
+
+
+
+<h3>内容三：tr 命令的参数</h3>
+
+
+
+<p>1) \ 反斜杠<br>2) \b 退格<br>3) \f 换页<br>4) \n 换行<br>5) \r 回车<br>6) \t 水平制表符<br>7) \v 垂直制表符<br>8) &lt;character 1&gt;-&lt;character 2&gt; 从某个字符到另 1 个字符，例如：a-z、a-Z、0-9<br>9) [&lt;character&gt;*] 在 &lt;section 2&gt; 中可用，&lt;character&gt; 会复制得和 &lt;section 1&gt; 中一样长<br><em>10) </em>[&lt;character&gt;*&lt;frequency&gt;] 将 &lt;character&gt; 复制 &lt;frequency&gt; 次，若以 0 开头，则视为八进制<br>11 [:alnum:] 所有字母和数字<br>12 [:alpha:] 所有字母<br>13 [:blank:] 所有呈水平排列的空白字符<br>14 [:cntrl:] 所有控制字符<br>15 [:digit:] 所有数字<br>16 [:graph:] 所有可打印字符，但不包括空格<br>17 [:lower:] 所有小写字母<br>18 [:print:] 所有可打印字符，包括空格<br>19 [:punct:] 所有标点字符<br>20 [:space:] 所有呈水平或垂直排列的空白字符<br>21 [:upper:] 所有大写字母<br>22 [:xdigit:] 所有十六进制数<br>23 [=字符=] 所有和指定字符相等的字符</p>
+
+
+
+<h3>内容三：tr 命令的案例</h3>
+
+
+
+<h4>3.1 案例一：替换某内容外的所有内容</h4>
+
+
+
+<pre class="wp-block-code"><code># echo 'zmyb' | tr -c zmy a
+zmyaa</code></pre>
+
+
+
+<p>（补充：这里以将内容 zmyb 中 zmy 以外的内容替换成内容 a 为例）</p>
+
+
+
+<p>（注意：zmyb 后面还有一个结尾符号，所以结果会多 1 个内容 a）</p>
+
+
+
+<h4>3.2 案例二：删除某内容</h4>
+
+
+
+<pre class="wp-block-code"><code># echo 'zmy' | tr -d m
+zy</code></pre>
+
+
+
+<p>（补充：这里以删除内容 zmy 中的内容 m 为例）</p>
+
+
+
+<h4>3.3 案例三：将相临重复的某个字符缩减成 1 个</h4>
+
+
+
+<pre class="wp-block-code"><code># echo zmmy | tr -s m
+zmy</code></pre>
+
+
+
+<p>（补充：这里以将内容 zmmy 中多个字符 m 压缩成 1 个为例）</p>
+
+
+
+<h4>3.4 案例四：替换字符，并将要匹配的内容缩减成和要替换的内容一样长</h4>
+
+
+
+<p>如果是正常情况：</p>
+
+
+
+<pre class="wp-block-code"><code>zhumingyu@laptop:~/Test&gt; echo abeabe | tr ab c
+ccecce</code></pre>
+
+
+
+<p>（补充：这里以将内容 abeabe 中的内容 ab 替换成内容 c 为例）</p>
+
+
+
+<p>如果是缩减的情况</p>
+
+
+
+<pre class="wp-block-code"><code>zhumingyu@laptop:~/Test&gt; echo abeabe | tr -t ab c
+cbecbe</code></pre>
+
+
+
+<p>（补充：这里以将内容 abeabe 中的内容 a 替换成内容 c 为例）</p>
+
+
+
+<p>（注意：这里 tr -t ab c 中内容 c 是 1 个字符，所以内容 ab 会被压缩成 1 个字符 a）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[命令] Linux 命令 lsof （显示进程）</title>
+		<link>https://eternalcenter-jun-2022.github.io/lsof/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Thu, 23 Jun 2022 10:06:50 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Directory (系统目录)]]></category>
+		<category><![CDATA[System File (系统文件)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Performance (系统性能)]]></category>
+		<category><![CDATA[System Process (系统进程)]]></category>
+		<category><![CDATA[System Process & System Performance (系统进程 & 系统性能)]]></category>
+		<category><![CDATA[System Process Security (系统进程安全)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Storage (系统存储)]]></category>
+		<category><![CDATA[System Storage & System Directory & System File (系统存储 & 系统目录 & 系统文件)]]></category>
+		<category><![CDATA[System User (系统用户)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26135</guid>
+
+					<description><![CDATA[内容一：lsof 命令输出结果 内容二：lsof 命令输出结果简介 1) COMMAND 进程名2) PID （Process Id） PID 号3) USER 用户4) FD 文件描述信息（补充：cwd 代表当前目录，txt 代表 txt 文件，rtd 代表 root 目录，mem 代表内存映射文件）5) TYPE 文件类型（补充：DIR 代表当前目录，REG 代表普通文件，CHR 代表字符，a_inode 代表 Inode 文件，FIFO 代表管道或者 socket文件，netlink 代表网络，unkonwn 代表未知）6) DEVICE 设备 ID7) SIZE/OFF 进程大小8) NODE 文件的 Inode 号9) NAME 路径或链接 内容三：lsof 使用案例 3.1 案例一：显示已经被删除的文件 3.2 案例二：显示用户已打开的案例 3.2.1 显示某用户已打开的文件 &#8230; <p class="link-more"><a href="https://eternalcenter-jun-2022.github.io/lsof/" class="more-link">Continue reading<span class="screen-reader-text"> "[命令] Linux 命令 lsof （显示进程）"</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：lsof 命令输出结果</h3>
+
+
+
+<pre class="wp-block-code"><code># lsof | more
+COMMAND     PID   TID    USER   FD      TYPE             DEVICE  SIZE/OFF       NODE NAME
+systemd       1          root  cwd       DIR              251,1      4096          1 /
+......</code></pre>
+
+
+
+<h3>内容二：lsof 命令输出结果简介</h3>
+
+
+
+<p>1) COMMAND 进程名<br>2) PID （Process Id） PID 号<br>3) USER 用户<br>4) FD 文件描述信息<br>（补充：cwd 代表当前目录，txt 代表 txt 文件，rtd 代表 root 目录，mem 代表内存映射文件）<br>5) TYPE 文件类型<br>（补充：DIR 代表当前目录，REG 代表普通文件，CHR 代表字符，a_inode 代表 Inode 文件，FIFO 代表管道或者 socket文件，netlink 代表网络，unkonwn 代表未知）<br>6) DEVICE 设备 ID<br>7) SIZE/OFF 进程大小<br>8) NODE 文件的 Inode 号<br>9) NAME 路径或链接</p>
+
+
+
+<h3>内容三：lsof 使用案例</h3>
+
+
+
+<h4>3.1 案例一：显示已经被删除的文件</h4>
+
+
+
+<pre class="wp-block-code"><code># lsof | grep deleted</code></pre>
+
+
+
+<h4>3.2 案例二：显示用户已打开的案例</h4>
+
+
+
+<h5>3.2.1 显示某用户已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -u zhumingyu mingyuzhu</code></pre>
+
+
+
+<p>（补充：这里以显示用户 zhumingyu 和 mingyuzhu 已打开的文件为例）</p>
+
+
+
+<h5>3.2.2 不显示某用户已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -u mingyuzhu</code></pre>
+
+
+
+<p>（补充：这里以不显示用户 mingyuzhu 已打开的文件为例）</p>
+
+
+
+<h4>3.3 案例三：显示进程已打开的文件</h4>
+
+
+
+<h5>3.3.1 显示某进程已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -p 1024</code></pre>
+
+
+
+<p>（补充：这里以显示 PID 号是 1024 已打开的文件为例）</p>
+
+
+
+<h5>3.3.2 不显示某进程已打开的所有文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -p ^1024</code></pre>
+
+
+
+<p>（补充：这里以不显示 PID 号是 1024 已打开的文件为例）</p>
+
+
+
+<h5>3.3.3 显示某几个进程已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -p 1,2,3</code></pre>
+
+
+
+<p>（补充：这里以显示 PID 号是 1、2 和 3 已打开的文件为例）</p>
+
+
+
+<h4>3.4 案例四：显示已打开的网络文件</h4>
+
+
+
+<h5>3.4.1 显示所有已打开的网络文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i</code></pre>
+
+
+
+<h5>3.4.2 显示所有 IPv4 协议已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i 4</code></pre>
+
+
+
+<h5>3.4.3 显示所有 IPv6 协议已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i 6</code></pre>
+
+
+
+<h5>3.4.4 显示所有 TCP 协议已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i TCP</code></pre>
+
+
+
+<h5>3.4.5 显示所有 TCP 协议已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i UDP</code></pre>
+
+
+
+<h5>3.4.6 显示某个 TCP 端口或者 UDP 端口已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i:22</code></pre>
+
+
+
+<p>（补充：这里以显示 TCP 或者 UPD 的 22 端口已打开的文件为例）</p>
+
+
+
+<h5>3.4.7 显示某个 TCP 端口已打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i TCP:22</code></pre>
+
+
+
+<p>（补充：这里以显示 TCP 的 22 端口已打开的文件为例）</p>
+
+
+
+<h5>3.4.8 显示某几个 TCP 端口打开的文件</h5>
+
+
+
+<pre class="wp-block-code"><code># lsof -i TCP:1-1024</code></pre>
+
+
+
+<p>（补充：这里以显示 TCP 的 1 端口到 1024 端口打开的文件为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[命令] Linux 命令 dir （显示文件或目录）</title>
+		<link>https://eternalcenter-jun-2022.github.io/dir/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Wed, 22 Jun 2022 09:34:11 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26098</guid>
+
+					<description><![CDATA[内容一：dir 命令的格式 内容二：dir 命令的选项 1) -a 或者 &#8211;all 显示隐藏文件和隐藏目录2) -A 或者 &#8211;almost-all 显示隐藏文件和隐藏目录，但是不显示当前目录 . 和上一级目录 ..3) -h 或者 &#8211;human-readable 以方便人类阅读的方式显示4) -l 显示文件或目录的详细信息5) -L 显示链接时现时链接指向的文件或目录而不是显示链接本身6) -g 显示文件或目录的详细信息，但是不显示所属主7) -G 显示文件或目录的详细信息，但是不显示所属组8) -r 或者 &#8211;reverse 排序时颠倒顺序9) -R 显示递归的子目录10) -S 按照大小进行排序11) -t 按照修改时间进行排序12) -x 按列进行显示13) -X 按后缀名的字母顺序进行排序]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：dir 命令的格式</h3>
+
+
+
+<pre class="wp-block-code"><code># dir &lt;option&gt; &lt;file or directory&gt;</code></pre>
+
+
+
+<h3>内容二：dir 命令的选项</h3>
+
+
+
+<p>1) -a 或者 &#8211;all 显示隐藏文件和隐藏目录<br>2) -A 或者 &#8211;almost-all 显示隐藏文件和隐藏目录，但是不显示当前目录 . 和上一级目录 ..<br>3) -h 或者 &#8211;human-readable 以方便人类阅读的方式显示<br>4) -l 显示文件或目录的详细信息<br>5) -L 显示链接时现时链接指向的文件或目录而不是显示链接本身<br>6) -g 显示文件或目录的详细信息，但是不显示所属主<br>7) -G 显示文件或目录的详细信息，但是不显示所属组<br>8) -r 或者 &#8211;reverse 排序时颠倒顺序<br>9) -R 显示递归的子目录<br>10) -S 按照大小进行排序<br>11) -t 按照修改时间进行排序<br>12) -x 按列进行显示<br>13) -X 按后缀名的字母顺序进行排序</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux 系统 UUID 的显示 （主板 UUID）</title>
+		<link>https://eternalcenter-jun-2022.github.io/uuid/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Wed, 22 Jun 2022 08:30:55 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Computer & System Hardware & System Installation & System Upgradation (系统电脑 & 系统硬件 & 系统安装 & 系统升级)]]></category>
+		<category><![CDATA[System Hardware (系统硬件)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=26096</guid>
+
+					<description><![CDATA[内容一：系统 UUID 1) UUID 全名 Universally Unique Identifier，即通用唯一识别码2) 系统 UUID 是主板产品的 UUID 内容二：系统 UUID 的显示 如果是虚拟机： 如果是虚拟机或物理机：]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：系统 UUID</h3>
+
+
+
+<p>1) UUID 全名 Universally Unique Identifier，即通用唯一识别码<br>2) 系统 UUID 是主板产品的 UUID</p>
+
+
+
+<h3>内容二：系统 UUID 的显示</h3>
+
+
+
+<p>如果是虚拟机：</p>
+
+
+
+<pre class="wp-block-code"><code># cat /sys/devices/virtual/dmi/id/product_uuid</code></pre>
+
+
+
+<p>如果是虚拟机或物理机：</p>
+
+
+
+<pre class="wp-block-code"><code># dmidecode -s system-uuid</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux 数值计算</title>
+		<link>https://eternalcenter-jun-2022.github.io/numerical-calculations/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2022 14:36:27 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Languages (语言)]]></category>
+		<category><![CDATA[Shell]]></category>
+		<category><![CDATA[Shell Basic (基础)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=25907</guid>
+
+					<description><![CDATA[内容一：数值计算符号 1) + ，加法2) – ，减法3) * ，乘法4) / ，除法5) % ，求余 内容二：数值计算的方法 2.1 方法一：使用 expr 命令 或者： 或者： （补充：这里以 1 加 2 等于 3 为例） 2.2 方法二：使用 let 命令 （补充：这里以 2 除以 1 等于 2 为例） 2.3 方法三：使用双括号 (()) （补充：这里以 1 乘以 2 等于 2 为例）]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：数值计算符号</h3>
+
+
+
+<p>1) + ，加法<br>2) – ，减法<br>3) * ，乘法<br>4) / ，除法<br>5) % ，求余</p>
+
+
+
+<h3>内容二：数值计算的方法</h3>
+
+
+
+<h4>2.1 方法一：使用 expr 命令</h4>
+
+
+
+<pre class="wp-block-code"><code># a=1
+# b=2
+# c=`expr $a + $b`
+# echo $c
+3</code></pre>
+
+
+
+<p>或者：</p>
+
+
+
+<pre class="wp-block-code"><code># a=1
+# b=2
+# c=$(expr $a + $b)
+# echo $c
+3</code></pre>
+
+
+
+<p>或者：</p>
+
+
+
+<pre class="wp-block-code"><code># a=1
+# b=2
+# c=$&#91;`expr $a + $b`]
+# echo $c
+3</code></pre>
+
+
+
+<p>（补充：这里以 1 加 2 等于 3 为例）</p>
+
+
+
+<h4>2.2 方法二：使用 let 命令</h4>
+
+
+
+<pre class="wp-block-code"><code># a=1
+# b=2
+# let c=b/c
+# echo $c
+2</code></pre>
+
+
+
+<p>（补充：这里以 2 除以 1 等于 2 为例）</p>
+
+
+
+<h4>2.3 方法三：使用双括号 (())</h4>
+
+
+
+<pre class="wp-block-code"><code># a=1
+# b=2
+# c=$(($a * $b))
+# echo $c
+2</code></pre>
+
+
+
+<p>（补充：这里以 1 乘以 2 等于 2 为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[步骤] 软件源的设置 （SUSE 版） （通过本地镜像版）</title>
+		<link>https://eternalcenter-jun-2022.github.io/repository-suse-local/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2022 08:10:56 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Computer & System Hardware & System Installation & System Upgradation (系统电脑 & 系统硬件 & 系统安装 & 系统升级)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Patch (系统补丁)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<category><![CDATA[System Software (系统软件)]]></category>
+		<category><![CDATA[System Upgradation (系统升级)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=25888</guid>
+
+					<description><![CDATA[步骤一：加载本地镜像到系统光驱 （步骤略） 步骤二：挂载本地镜像 （补充：这里以挂载 /dev/sr1 到 /mnt 目录为例） 步骤三：添加本地镜里的软件源 3.1 添加本地镜里的软件源 （通过 zypper 命令） 或者： （补充：这里以将1) /mnt/Module-Basesystem 添加到软件源并命名为 SLE15-Base2) /mnt/Module-Legacy 添加到软件源并命名为 SLE15-Legacy3) /mnt/Module-Development-Tools 添加到软件源并命名为 SLE15-Tools为例） 3.1 添加本地镜里的软件源 （通过创建配置文件） 创建以下内容： 创建以下内容： 创建以下内容： （补充：这里以将1) /mnt/Module-Basesystem 添加到软件源并命名为 SLE15-Base2) /mnt/Module-Legacy 添加到软件源并命名为 SLE15-Legacy3) /mnt/Module-Development-Tools 添加到软件源并命名为 SLE15-Tools为例）]]></description>
+										<content:encoded><![CDATA[
+<h2>步骤一：加载本地镜像到系统光驱</h2>
+
+
+
+<p>（步骤略）</p>
+
+
+
+<h2>步骤二：挂载本地镜像</h2>
+
+
+
+<pre class="wp-block-code"><code># mount /dev/cdrom /mnt</code></pre>
+
+
+
+<p>（补充：这里以挂载 /dev/sr1 到 /mnt 目录为例）</p>
+
+
+
+<h2>步骤三：添加本地镜里的软件源</h2>
+
+
+
+<h4>3.1 添加本地镜里的软件源 （通过 zypper 命令）</h4>
+
+
+
+<pre class="wp-block-code"><code># zypper ar file:/mnt/Module-Basesystem SLE15-Base
+# zypper ar file:/mnt/Module-Legacy SLE15-Legacy
+# zypper ar file:/mnt/Module-Development-Tools SLE15-Tools</code></pre>
+
+
+
+<p>或者：</p>
+
+
+
+<pre class="wp-block-code"><code># zypper ar -f /mnt/Module-Basesystem SLE15-Base
+# zypper ar -f /mnt/Module-Legacy SLE15-Legacy
+# zypper ar -f /mnt/Module-Development-Tools SLE15-Tools</code></pre>
+
+
+
+<p>（<br>补充：这里以将<br>1) /mnt/Module-Basesystem 添加到软件源并命名为 SLE15-Base<br>2) /mnt/Module-Legacy 添加到软件源并命名为 SLE15-Legacy<br>3) /mnt/Module-Development-Tools 添加到软件源并命名为 SLE15-Tools<br>为例<br>）</p>
+
+
+
+<h4>3.1 添加本地镜里的软件源 （通过创建配置文件）</h4>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/zypp/repos.d/SLE15-Base.repo</code></pre>
+
+
+
+<p>创建以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>&#91;SLE15-Base]
+enabled=1
+autorefresh=0
+baseurl=file:/mnt/Module-Development-Tools</code></pre>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/zypp/repos.d/SLE15-Legacy.repo</code></pre>
+
+
+
+<p>创建以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>&#91;SLE15-Legacy]
+enabled=1
+autorefresh=0
+baseurl=file:/mnt/Module-Legacy</code></pre>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/zypp/repos.d/SLE15-Tools.repo</code></pre>
+
+
+
+<p>创建以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>&#91;SLE15-Tools]
+enabled=1
+autorefresh=0
+baseurl=file:/mnt/Module-Basesystem/</code></pre>
+
+
+
+<p>（<br>补充：这里以将<br>1) /mnt/Module-Basesystem 添加到软件源并命名为 SLE15-Base<br>2) /mnt/Module-Legacy 添加到软件源并命名为 SLE15-Legacy<br>3) /mnt/Module-Development-Tools 添加到软件源并命名为 SLE15-Tools<br>为例<br>）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[步骤] wtmp 日志保存时间默认策略的设置 （设置 last 命令可以显示多久以前记录）</title>
+		<link>https://eternalcenter-jun-2022.github.io/wtmp/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 13:15:11 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Log (系统日志)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Security Log (系统安全日志)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=24466</guid>
+
+					<description><![CDATA[如果是 Rocky Linux &#38; RHEL： （补充：1) 影响的日志文件有 /var/log/wtmp （/var/log/wtmp）2) 每月将现在的日志文件进行备份并生成新的日志文件 （monthly）3) 日志文件权限是 0644 所属主是 root （create 0664 root utmp）4) 只有当日志文件超过 1 M 时，且达到备份的时间才会开始备份5) 备份的日志文件保留 5 份 （rotate 1）） 如果是 openSUSE &#38; SUSE： （补充：1) 影响的日志文件有 /var/log/wtmp 和 /var/log/btmp （/var/log/wtmp /var/log/btmp）2) 对备份的日志文件进行压缩 （compress）3) 将 YYYYMMDD 格式的时间作为备份日志文件名的一部分 （dateext）4) 日志最多保存 365 天 （maxage 365）5) 备份的日志文件保留 99 份 （rotate 99）6) &#8230; <p class="link-more"><a href="https://eternalcenter-jun-2022.github.io/wtmp/" class="more-link">Continue reading<span class="screen-reader-text"> "[步骤] wtmp 日志保存时间默认策略的设置 （设置 last 命令可以显示多久以前记录）"</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>如果是 Rocky Linux &amp; RHEL：</p>
+
+
+
+<pre class="wp-block-code"><code># cat /etc/logrotate.conf
+......
+/var/log/wtmp {
+    monthly
+    create 0664 root utmp
+        minsize 1M
+    rotate 1
+}
+......</code></pre>
+
+
+
+<p>（<br>补充：<br>1) 影响的日志文件有 /var/log/wtmp （/var/log/wtmp）<br>2) 每月将现在的日志文件进行备份并生成新的日志文件 （monthly）<br>3) 日志文件权限是 0644 所属主是 root （create 0664 root utmp）<br>4) 只有当日志文件超过 1 M 时，且达到备份的时间才会开始备份<br>5) 备份的日志文件保留 5 份 （rotate 1）<br>）</p>
+
+
+
+<p>如果是 openSUSE &amp; SUSE：</p>
+
+
+
+<pre class="wp-block-code"><code># cat /etc/logrotate.d/wtmp
+/var/log/wtmp /var/log/btmp {
+    compress
+    dateext
+    maxage 365
+    rotate 99
+    size=+400k
+    notifempty
+    missingok
+    copytruncate
+}</code></pre>
+
+
+
+<p>（<br>补充：<br>1) 影响的日志文件有 /var/log/wtmp 和 /var/log/btmp （/var/log/wtmp /var/log/btmp）<br>2) 对备份的日志文件进行压缩 （compress）<br>3) 将 YYYYMMDD 格式的时间作为备份日志文件名的一部分 （dateext）<br>4) 日志最多保存 365 天 （maxage 365）<br>5) 备份的日志文件保留 99 份 （rotate 99）<br>6) 现在的日志文件超过 400 k 就开始备份，不用考虑备份时间，且备份时间的相关设置也将无效 （size=+400k）<br>7) 如果现有日志文件是空文件，则不再对日志文件进行备份 （notifempty）<br>8) 如果现有日志文件丢失，则不报错直接生成新的日志文件 （missingok）<br>）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux 环境变量 （$PATH） 的设置</title>
+		<link>https://eternalcenter-jun-2022.github.io/environment-variable/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 06:23:44 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<category><![CDATA[System User (系统用户)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=24425</guid>
+
+					<description><![CDATA[内容一：临时设置环境变量 （$PATH） 1.1 查看当前环境变量 （$PATH） 值 1.2 临时设置环境变量 （$PATH） 值 内容二：永久设置环境变量 （$PATH） 2.1 给某个用户设置永久环境变量 2.1.1 切换到要永久设置环境变量 （$PATH）的用户 （补充：这里以切换到 root 用户为例） 2.1.2 配置 ~/.bashrc 配置文件 添加以下内容： （补充： 这里以将环境变量 （$PATH） 设置为 /usr/locar/new/bin 为例） 2.1.3 让环境变量 （$PATH） 设置生效 2.2 全局永久设置环境变量 2.2.1 配置 /etc/profile 配置文件 添加以下内容： （补充： 这里以将环境变量 （$PATH） 设置为 /usr/locar/new/bin 为例） 2.2.2 让环境变量 （$PATH） 设置生效]]></description>
+										<content:encoded><![CDATA[
+<h3 class="has-text-align-left">内容一：临时设置环境变量 （$PATH）</h3>
+
+
+
+<h4 class="has-text-align-left">1.1 查看当前环境变量 （$PATH） 值</h4>
+
+
+
+<pre class="wp-block-code"><code># echo $PATH</code></pre>
+
+
+
+<h4>1.2 临时设置环境变量 （$PATH） 值</h4>
+
+
+
+<pre class="wp-block-code"><code># export PATH=$PATH:/usr/locar/new/bin</code></pre>
+
+
+
+<h3>内容二：永久设置环境变量 （$PATH）</h3>
+
+
+
+<h4>2.1 给某个用户设置永久环境变量</h4>
+
+
+
+<h5>2.1.1 切换到要永久设置环境变量 （$PATH）的用户</h5>
+
+
+
+<pre class="wp-block-code"><code># su - root</code></pre>
+
+
+
+<p>（补充：这里以切换到 root 用户为例）</p>
+
+
+
+<h5>2.1.2 配置 ~/.bashrc 配置文件</h5>
+
+
+
+<pre class="wp-block-code"><code># vim ~/.bashrc</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+export PATH=$PATH:/usr/locar/new/bin</code></pre>
+
+
+
+<p>（补充： 这里以将环境变量 （$PATH） 设置为 /usr/locar/new/bin 为例）</p>
+
+
+
+<h5>2.1.3 让环境变量 （$PATH） 设置生效</h5>
+
+
+
+<pre class="wp-block-code"><code># source ~/.bashrc</code></pre>
+
+
+
+<h4>2.2 全局永久设置环境变量</h4>
+
+
+
+<h5>2.2.1 配置 /etc/profile 配置文件</h5>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/profile</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+export PATH=$PATH:/usr/locar/new/bin</code></pre>
+
+
+
+<p>（补充： 这里以将环境变量 （$PATH） 设置为 /usr/locar/new/bin 为例）</p>
+
+
+
+<h5>2.2.2 让环境变量 （$PATH） 设置生效</h5>
+
+
+
+<pre class="wp-block-code"><code># source /etc/profile</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux sudo 命令安全的加强</title>
+		<link>https://eternalcenter-jun-2022.github.io/sudo-secure-enhance/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 03:20:21 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Privilege (系统权限)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=24376</guid>
+
+					<description><![CDATA[仅让 use pty 可以使用 sudo 命令 （避免后台进程使用 sudo 命令） 或者： 添加以下内容：]]></description>
+										<content:encoded><![CDATA[
+<p>仅让 use pty 可以使用 sudo 命令 （避免后台进程使用 sudo 命令）</p>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/sudoers</code></pre>
+
+
+
+<p>或者：</p>
+
+
+
+<pre class="wp-block-code"><code># visudo</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+Defaults use_pty</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[步骤] Linux sudo 日志的开启</title>
+		<link>https://eternalcenter-jun-2022.github.io/sudo-log/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 03:14:07 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Log (系统日志)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Privilege (系统权限)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Security Log (系统安全日志)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=24372</guid>
+
+					<description><![CDATA[步骤一：开启 sudo 日志 或者： 添加以下内容： 步骤二：显示 sudo 日志 2.1 退出后重新登陆 （步骤略） 2.2 显示 sudo 日志]]></description>
+										<content:encoded><![CDATA[
+<h3>步骤一：开启 sudo 日志</h3>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/sudoers</code></pre>
+
+
+
+<p>或者：</p>
+
+
+
+<pre class="wp-block-code"><code># visudo</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+Defaults logfile="/var/log/sudo.log"</code></pre>
+
+
+
+<h3>步骤二：显示 sudo 日志</h3>
+
+
+
+<h4>2.1 退出后重新登陆</h4>
+
+
+
+<p>（步骤略）</p>
+
+
+
+<h4>2.2 显示 sudo 日志</h4>
+
+
+
+<pre class="wp-block-code"><code># cat /var/log/sudo.log</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[排错] 解决 Linux 执行 ping 命令检测网络联通性时报错 “connect: Network is unreachable”</title>
+		<link>https://eternalcenter-jun-2022.github.io/debug-connect-network-is-unreachable/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Wed, 15 Jun 2022 15:22:51 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Network (系统网络)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=24286</guid>
+
+					<description><![CDATA[报错代码 分析 当配置的 IP 地址和子网掩码不包含配置的网关 IP 地址时，检测网络联通性时就会报此类错误 解决方法 配置正确的 IP 地址、子网掩码或网关 IP 地址（步骤略）]]></description>
+										<content:encoded><![CDATA[
+<h2> 报错代码</h2>
+
+
+
+<pre class="wp-block-code"><code>connect: Network is unreachable</code></pre>
+
+
+
+<h2>分析</h2>
+
+
+
+<p>当配置的 IP 地址和子网掩码不包含配置的网关 IP 地址时，检测网络联通性时就会报此类错误</p>
+
+
+
+<h2>解决方法</h2>
+
+
+
+<p>配置正确的 IP 地址、子网掩码或网关 IP 地址<br>（步骤略）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[工具] Shell 显示可以无密码登陆系统的用户 （以 1 行的形式显示）</title>
+		<link>https://eternalcenter-jun-2022.github.io/shell-login-check/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Sat, 11 Jun 2022 13:33:07 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Languages (语言)]]></category>
+		<category><![CDATA[Shell]]></category>
+		<category><![CDATA[Shell Monitor (监控)]]></category>
+		<category><![CDATA[Shell Tool (工具)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System User (系统用户)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23846</guid>
+
+					<description><![CDATA[介绍 作者：朱明宇名称：显示可以登陆系统的用户 （以 1 行到形式显示）作用：显示可以登陆系统的用户 （以 1 行到形式显示） 使用方法：1. 给此脚本添加执行权限2. 执行此脚本 脚本]]></description>
+										<content:encoded><![CDATA[
+<h2>介绍</h2>
+
+
+
+<p>作者：朱明宇<br>名称：显示可以登陆系统的用户 （以 1 行到形式显示）<br>作用：显示可以登陆系统的用户 （以 1 行到形式显示）</p>
+
+
+
+<p>使用方法：<br>1. 给此脚本添加执行权限<br>2. 执行此脚本</p>
+
+
+
+<h2>脚本</h2>
+
+
+
+<pre class="wp-block-code"><code>#!/bin/bash
+
+userlist=
+n=`cat /etc/passwd | wc -l`
+i=1
+
+while &#91; $i -le $n ]
+do
+	line=`sed -n "$&#91;i]p" /etc/passwd`
+	echo $line | egrep "nologin$|false$" &amp;&gt; /dev/null
+	if &#91; $? -ne 0 ];then
+                userlist="$userlist `echo $line | awk -F: '{print $1}'`"
+	fi
+	let i++
+done
+
+echo $userlist</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[命令] Linux 命令 xz （打包、解包、压缩和解压文件）</title>
+		<link>https://eternalcenter-jun-2022.github.io/xz/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Sat, 11 Jun 2022 12:29:30 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System File (系统文件)]]></category>
+		<category><![CDATA[System Storage (系统存储)]]></category>
+		<category><![CDATA[System Storage & System Directory & System File (系统存储 & 系统目录 & 系统文件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23814</guid>
+
+					<description><![CDATA[内容一：压缩并创建 （压缩） 包 （文件） 1.1 压缩并创建 （压缩） 包 （文件） （不保留原文件） 1.1.1 压缩并创建 （压缩） 包 （某 1 个文件） （不保留原文件） （补充：压缩后的文件会以 xz 后缀结尾） 1.1.2 压缩并创建 （压缩） 包 （某几个文件） （不保留原文件） （补充：压缩后的文件会各自以 xz 后缀结尾） 1.2 压缩并创建 （压缩） 包 （文件） （保留原文件） 1.2.1 压缩并创建 （压缩） 包 （某 1 个文件） （保留原文件） （补充：压缩后的文件会以 xz 后缀结尾） 1.2.2 压缩并创建 （压缩） 包 （某几个文件） （保留原文件） （补充：压缩后的文件会各自以 xz &#8230; <p class="link-more"><a href="https://eternalcenter-jun-2022.github.io/xz/" class="more-link">Continue reading<span class="screen-reader-text"> "[命令] Linux 命令 xz （打包、解包、压缩和解压文件）"</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：压缩并创建 （压缩） 包 （文件）</h3>
+
+
+
+<h4>1.1 压缩并创建 （压缩） 包 （文件） （不保留原文件）</h4>
+
+
+
+<h5>1.1.1 压缩并创建 （压缩） 包 （某 1 个文件） （不保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -z &lt;file&gt;</code></pre>
+
+
+
+<p>（补充：压缩后的文件会以 xz 后缀结尾）</p>
+
+
+
+<h5>1.1.2 压缩并创建 （压缩） 包 （某几个文件） （不保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -z &lt;file 1&gt; &lt;file 2&gt; &lt;file 3&gt; ......</code></pre>
+
+
+
+<p>（补充：压缩后的文件会各自以 xz 后缀结尾）</p>
+
+
+
+<h4>1.2 压缩并创建 （压缩） 包 （文件） （保留原文件）</h4>
+
+
+
+<h5>1.2.1 压缩并创建 （压缩） 包 （某 1 个文件） （保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -zk &lt;file&gt;</code></pre>
+
+
+
+<p>（补充：压缩后的文件会以 xz 后缀结尾）</p>
+
+
+
+<h5>1.2.2 压缩并创建 （压缩） 包 （某几个文件） （保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -zk &lt;file 1&gt; &lt;file 2&gt; &lt;file 3&gt; ......</code></pre>
+
+
+
+<p>（补充：压缩后的文件会各自以 xz 后缀结尾）</p>
+
+
+
+<h3> 内容二：解压 （压缩） 包</h3>
+
+
+
+<h4>2.1 解压 （压缩） 包 （不保留原文件）</h4>
+
+
+
+<h5>2.1.1 解压 （压缩） 包 （某 1 个 （压缩） 包） （不保留原 （压缩） 包）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -d &lt;(compressed) package&gt;</code></pre>
+
+
+
+<p>（注意：可以用 xz 命令解压的压缩包会以 xz 后缀结尾）</p>
+
+
+
+<h5>2.1.2 解压 （压缩） 包 （某几个 （压缩） 包） （不保留原 （压缩） 包）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -d &lt;(compressed) package 1&gt; &lt;(compressed) package 2&gt; &lt;(compressed) package 3&gt; ......</code></pre>
+
+
+
+<p>（补充：解压后的文件会各自去掉 xz 后缀）</p>
+
+
+
+<p>（注意：可以用 xz 命令解压的压缩包会以 xz 后缀结尾）</p>
+
+
+
+<h4>2.2 解压 （压缩） 包 （保留原文件）</h4>
+
+
+
+<h5>2.2.1 解压 （压缩） 包 （某 1 个 （压缩） 包） （保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -dk &lt;(compressed) package&gt;</code></pre>
+
+
+
+<p>（注意：可以用 xz 命令解压的压缩包会以 xz 后缀结尾）</p>
+
+
+
+<h5>2.2.2 解压 （压缩） 包 （某几个 （压缩） 包） （保留原文件）</h5>
+
+
+
+<pre class="wp-block-code"><code># xz -dk &lt;(compressed) package 1&gt; &lt;(compressed) package 2&gt; &lt;(compressed) package 3&gt; ......</code></pre>
+
+
+
+<p>（补充：解压后的文件会各自去掉 xz 后缀）</p>
+
+
+
+<p>（注意：可以用 xz 命令解压的压缩包会以 xz 后缀结尾）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[排错] 解决 Linux 执行 crontab -e 命令时报错 “You (&#8230;&#8230;) are not allowed to use this program (crontab)”</title>
+		<link>https://eternalcenter-jun-2022.github.io/debug-you-are-not-allowed-to-use-this-program-crontab/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Fri, 10 Jun 2022 10:07:51 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System File Security (系统文件安全)]]></category>
+		<category><![CDATA[System Login Security (系统登录安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Operation (系统操作)]]></category>
+		<category><![CDATA[System Operation & System Setting & System Software (系统操作 & 系统设置 & 系统软件)]]></category>
+		<category><![CDATA[System Performance (系统性能)]]></category>
+		<category><![CDATA[System Port Security (系统端口安全)]]></category>
+		<category><![CDATA[System Privilege (系统权限)]]></category>
+		<category><![CDATA[System Process (系统进程)]]></category>
+		<category><![CDATA[System Process & System Performance (系统进程 & 系统性能)]]></category>
+		<category><![CDATA[System Process Security (系统进程安全)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Setting (系统设置)]]></category>
+		<category><![CDATA[System User (系统用户)]]></category>
+		<category><![CDATA[System User & System Privilege (系统用户 & 系统权限)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23780</guid>
+
+					<description><![CDATA[解决方法 如果在系统中没有 /etc/cron.deny 配置文件，在 /etc/cron.allow 配置文件中添加要使用 crontab -e 命令的用户 添加以下内容： （补充：这里以添加用户 zhumingyu 为例） 如果在系统中没有 /etc/cron.allow 配置文件，在 /etc/cron.allow 配置文件中删除要使用 crontab -e 命令的用户 删除以下内容： （补充：这里以删除用户 zhumingyu 为例）]]></description>
+										<content:encoded><![CDATA[
+<h2>解决方法</h2>
+
+
+
+<p>如果在系统中没有 /etc/cron.deny 配置文件，在 /etc/cron.allow 配置文件中添加要使用 crontab -e 命令的用户</p>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/cron.allow</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+zhumingyu</code></pre>
+
+
+
+<p>（补充：这里以添加用户 zhumingyu 为例）</p>
+
+
+
+<p>如果在系统中没有 /etc/cron.allow 配置文件，在 /etc/cron.allow 配置文件中删除要使用 crontab -e 命令的用户</p>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/cron.allow</code></pre>
+
+
+
+<p>删除以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+zhumingyu
+......</code></pre>
+
+
+
+<p>（补充：这里以删除用户 zhumingyu 为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[排错] 解决 Linux 执行 iptables 命令时报错 “iptables: No chain/target/match by that name.”</title>
+		<link>https://eternalcenter-jun-2022.github.io/debug-iptables-no-chain-target-match-by-that-name/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2022 12:24:34 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Computer & System Hardware & System Installation & System Upgradation (系统电脑 & 系统硬件 & 系统安装 & 系统升级)]]></category>
+		<category><![CDATA[System Firewall (系统防火墙)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Upgradation (系统升级)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23749</guid>
+
+					<description><![CDATA[分析 系统运行的 kernel 内核已经被删除，此 kernel 内核相关的文件集都已经被删除，包括 ko 文件。安装新版本的 kernel 内核，并重启选择新版本的 kernel 内核，就能修复相关 kernel 内核文件集。 解决方法 步骤一：更新 kernel 内核 如果是 Rocky Linux &#38; RHEL： 如果是 openSUSE $ SLE： 步骤二：重启系统]]></description>
+										<content:encoded><![CDATA[
+<h2>分析</h2>
+
+
+
+<p>系统运行的 kernel 内核已经被删除，此 kernel 内核相关的文件集都已经被删除，包括 ko 文件。安装新版本的 kernel 内核，并重启选择新版本的 kernel 内核，就能修复相关 kernel 内核文件集。</p>
+
+
+
+<h2>解决方法</h2>
+
+
+
+<h3>步骤一：更新 kernel 内核</h3>
+
+
+
+<p>如果是 Rocky Linux &amp; RHEL：</p>
+
+
+
+<pre class="wp-block-code"><code># yum update kernel*</code></pre>
+
+
+
+<p>如果是 openSUSE $ SLE：</p>
+
+
+
+<pre class="wp-block-code"><code># zypper update kernel*</code></pre>
+
+
+
+<h3>步骤二：重启系统</h3>
+
+
+
+<pre class="wp-block-code"><code># reboot</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[排错] 解决 Linux 执行 Shell 脚本时报错 “binary operator expected”</title>
+		<link>https://eternalcenter-jun-2022.github.io/%e6%8e%92%e9%94%99-%e8%a7%a3%e5%86%b3-linux-%e6%89%a7%e8%a1%8c-shell-%e8%84%9a%e6%9c%ac%e6%97%b6%e6%8a%a5%e9%94%99-binary-operator-expected/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2022 11:53:32 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Languages (语言)]]></category>
+		<category><![CDATA[Shell]]></category>
+		<category><![CDATA[Shell Basic (基础)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23744</guid>
+
+					<description><![CDATA[解决方法 将 if 判断中的变量，打上双引号 “&#8221;&#8221;”将以下内容： 修改为： （补充：这里以给 $1 变量打上双引号 “&#8221;&#8221;” 为例）]]></description>
+										<content:encoded><![CDATA[
+<h2>解决方法</h2>
+
+
+
+<p>将 if 判断中的变量，打上双引号 “&#8221;&#8221;”<br>将以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+if &#91; -z $1 ];then
+......</code></pre>
+
+
+
+<p>修改为：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+if &#91; -z "$1" ];then
+......</code></pre>
+
+
+
+<p>（补充：这里以给 $1 变量打上双引号 “&#8221;&#8221;” 为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[步骤] Red Hat Satellite 无法停止任务的强制停止</title>
+		<link>https://eternalcenter-jun-2022.github.io/red-hat-satellite-task-forced-stop/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2022 11:43:29 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[Other Services (其他服务)]]></category>
+		<category><![CDATA[Red Hat Satellite]]></category>
+		<category><![CDATA[Services (服务)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23740</guid>
+
+					<description><![CDATA[步骤一：打一个快照 （步骤略） 步骤二：显示运行结果是错误的任务 （补充：从这里可以看出运行结果是错误的任务标签是 Actions::Katello::ContentView::Publish） 步骤三：强制停止 Red Hat Satellite 无法停止的任务 （补充：这里以强制停止标签为 Actions::Katello::ContentView::Publish 的任务为例）]]></description>
+										<content:encoded><![CDATA[
+<h3>步骤一：打一个快照</h3>
+
+
+
+<p>（步骤略）</p>
+
+
+
+<h3>步骤二：显示运行结果是错误的任务</h3>
+
+
+
+<pre class="wp-block-code"><code># sudo su - postgres -c "psql -d foreman -c 'select label,count(label),state,result from foreman_tasks_tasks where state &lt;&gt; '\''stopped'\'' group by label,state,result ORDER BY label;'"
+                        label                         | count |   state   | result  
+------------------------------------------------------+-------+-----------+---------
+ Actions::Katello::ContentView::Publish               |     1 | paused    | error
+ ......</code></pre>
+
+
+
+<p>（补充：从这里可以看出运行结果是错误的任务标签是 Actions::Katello::ContentView::Publish）</p>
+
+
+
+<h3>步骤三：强制停止 Red Hat Satellite 无法停止的任务</h3>
+
+
+
+<pre class="wp-block-code"><code># foreman-rake foreman_tasks:cleanup TASK_SEARCH='label = Actions::Katello::ContentView::Publish' STATES='paused' VERBOSE=true</code></pre>
+
+
+
+<p>（补充：这里以强制停止标签为 Actions::Katello::ContentView::Publish 的任务为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>[内容] Linux 目录的重新挂载</title>
+		<link>https://eternalcenter-jun-2022.github.io/remount/</link>
+		
+		<dc:creator><![CDATA[Mingyu Zhu]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2022 11:16:53 +0000</pubDate>
+				<category><![CDATA[Chinese (中文)]]></category>
+		<category><![CDATA[System (系统)]]></category>
+		<category><![CDATA[System Directory (系统目录)]]></category>
+		<category><![CDATA[System File (系统文件)]]></category>
+		<category><![CDATA[System File Security (系统文件安全)]]></category>
+		<category><![CDATA[System Network & System Security & System Log (系统网络 & 系统安全 & 系统日志)]]></category>
+		<category><![CDATA[System Privilege Security (系统权限安全)]]></category>
+		<category><![CDATA[System Process Security (系统进程安全)]]></category>
+		<category><![CDATA[System Security (系统安全)]]></category>
+		<category><![CDATA[System Storage (系统存储)]]></category>
+		<category><![CDATA[System Storage & System Directory & System File (系统存储 & 系统目录 & 系统文件)]]></category>
+		<guid isPermaLink="false">https://eternalcenter-jun-2022.github.io/?p=23734</guid>
+
+					<description><![CDATA[内容一：手动重新挂载目录 （补充：这里以带 nosuid、nodev 和 noexec 参数重新挂载 /dev/shm 目录为例） 内容二：开机自动重新挂载目录 添加以下内容： （补充：这里以带 nosuid、nodev 和 noexec 参数重新挂载 /dev/shm 目录为例）]]></description>
+										<content:encoded><![CDATA[
+<h3>内容一：手动重新挂载目录</h3>
+
+
+
+<pre class="wp-block-code"><code># mount -o remount,nosuid,nodev,noexec /dev/shm</code></pre>
+
+
+
+<p>（补充：这里以带 nosuid、nodev 和 noexec 参数重新挂载 /dev/shm 目录为例）</p>
+
+
+
+<h3>内容二：开机自动重新挂载目录</h3>
+
+
+
+<pre class="wp-block-code"><code># vim /etc/fstab</code></pre>
+
+
+
+<p>添加以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>......
+tmpfs /dev/shm tmpfs defaults,nosuid,nodev,noexec 0 0</code></pre>
+
+
+
+<p>（补充：这里以带 nosuid、nodev 和 noexec 参数重新挂载 /dev/shm 目录为例）</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
